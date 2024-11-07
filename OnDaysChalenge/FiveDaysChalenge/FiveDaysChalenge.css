@@ -1,0 +1,150 @@
+
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+      box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+      overflow: hidden;
+      background: linear-gradient(45deg, blue, green);
+    color: #fff;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 60% 40%; 
+    width: 350px; 
+    height: 350px;  
+  }
+
+  .left{
+    background-color: #fff;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+  }
+  .right{
+    background-color: #cacad6; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .imagee{
+    margin-top: -80px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    background-image: url('https://img.freepik.com/photos-gratuite/profil-parrot_1136-16.jpg?w=1380&t=st=1718280323~exp=1718280923~hmac=f73827b7b01589163a09663e698810601dab25463e14ce6dba041d78da4fe416');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+   
+  }
+  .profilname{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .title{
+    font-size: 14px;
+   margin-bottom: -7px;
+   
+  }
+  .title2{
+    font-size: 12px;
+  }
+  .boutons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    width: 120px;
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    height: 30px;                                                                                                                                                                                                                                   
+  }
+  .first_button{
+    margin: 10px;
+  }
+  .first_button:hover,.second_button:hover{
+    border: 0px solid black;
+    background: linear-gradient(45deg, blue, green);
+    color: #fff;
+    cursor: pointer;
+  }
+  .line1 h5, .line1 span {
+    margin: 0;
+    padding: 0;
+}
+.line1{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.line1:hover{
+    background-color: rgba(255, 255, 255, 0.623);
+    cursor: pointer;
+}
+.line1 span{
+    font-size: small;
+}
+.l1{
+    border-bottom: 2px solid white;
+}
+.l2{
+    border-bottom: 2px solid white;
+}
+.line1 h5{
+    font-size: smaller;
+}
+.circle{
+    position: absolute;
+    top: 8px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid red;
+    transition: all 1.5s ease-in-out; 
+}
+&:hover {
+    cursor: pointer;
+    .circle1 {
+      transform: rotate(360deg);
+    }
+    .circle2 {
+      transform: rotate(-360deg);
+    }
+  }

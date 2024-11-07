@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,300');
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.center-view {
+    border-radius: 50%;
+    background-color: #eee;
+    height: 300px;
+    width: 300px;
+    clip-path: circle(150px at 150px 150px);
+}
+
+.sky {
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    animation: sky 5s linear 0s infinite both;
+}
+
+.box {
+    clip-path: polygon(80% 0, 0 100%, 100% 100%);
+    position: absolute;
+    top: 95px;
+    left: 60px;
+    background-color: #ff0;
+    width: 100px;
+    height: 100px;
+    z-index: 50;
+    animation: left 8s linear 0s infinite both;
+}
+
+.bo {
+    clip-path: polygon(0 0, 20% 100%, 100% 100%);
+    position: absolute;
+    top: 95px;
+    left: 140px;
+    background-color: #ff0;
+    width: 100px;
+    height: 100px;
+    z-index: 50;
+    animation: left 8s linear 0s infinite both;
+}
+
+.land {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    background-color: #ff2;
+    width: 100%;
+    height: 35%;
+    animation: land 8s linear 0s infinite both;
+}
+
+.sun {
+    position: absolute;
+    top: 100px;
+    left: -30px;
+    border-radius: 50%;
+    background: #ff0;
+    width: 45px;
+    height: 45px;
+    animation: sun 5s linear reverse 0s infinite backwards;
+}
+.shadow{
+    position: absolute;
+    background-color: #0005;
+    clip-path: polygon(50% 15%, 30% 0, 70% 0);
+    width: 450px;
+    height: 100px;
+    top: 195px;
+    left: -70px;
+    z-index: 100;
+    animation: shadow 8s linear 0s infinite both;
+}
+
+@keyframes sky {
+    0% {
+        background-color: rgb(40, 43, 245);
+    }
+    25% {
+        background-color: #48f;
+    }
+    30% {
+        background-color: rgb(40, 43, 245);
+    }
+    50% {
+        background-color: rgb(40, 43, 245);
+    }
+    65% {
+        background-color: #003;
+    }
+    100% {
+        background-color:#003;
+    }
+}
+
+@keyframes land {
+    0% {
+        background-color: #ff0;
+    }
+    20% {
+        background-color: #ff3;
+    }
+    40% {
+        background-color: #550;
+    }
+    60% {
+        background-color: #772;
+    }
+    80% {
+        background-color: #550;
+    }
+    100% {
+        background-color: #ff0;
+    }
+}
+
+@keyframes sun{
+    0% {
+        top: 20%;
+        left: -10%;
+      }
+      15% {
+        top: 10%;
+        left: 0%;
+      }
+      30% {
+        top: 5%;
+        left: 10%;
+      }
+      40% {
+        top: 2%;
+        left: 20%;
+      }
+      50% {
+        top: 0%;
+        left: 40%;
+      }
+      65% {
+        top: 2%;
+        left: 50%;
+      }
+      80% {
+        top: 5%;
+        left: 60%;
+      }
+      90% {
+        top: 10%;
+        left: 70%;
+      }
+      100% {
+        top: 30%;
+        left: 90%;
+      }
+}
+
+@keyframes shadow {
+    0% {
+        clip-path: polygon(100% 15%, 30% 0, 70% 0);
+    }
+    12% {
+        clip-path: polygon(50% 15%, 30% 0, 70% 0);
+    }
+    24% {
+        clip-path: polygon(0% 15%, 30% 0, 70% 0);
+    }
+    36% {/*100*/
+        clip-path: polygon(50% 0%, 30% 0, 70% 0);
+    }	
+	48% {
+        clip-path: polygon(75% 15%, 30% 0, 70% 0);
+    }
+    60% {
+        clip-path: polygon(50% 15%, 30% 0, 70% 0);
+    }
+    72% {
+        clip-path: polygon(25% 15%, 30% 0, 70% 0);
+    }
+    84% {
+        clip-path: polygon(50% 0%, 30% 0, 70% 0);
+    }
+    100% {
+        clip-path: polygon(100% 15%, 30% 0, 70% 0);
+    }
+}
+@keyframes shadow {
+    0% {
+        clip-path: polygon(100% 15%, 30% 0, 70% 0);
+    }
+    12% {
+        clip-path: polygon(50% 0%, 30% 0, 70% 0);
+    }
+    24% {
+        clip-path: polygon(25% 15%, 30% 0, 70% 0);
+    }
+    36% {/*100*/
+        clip-path: polygon(50% 15%, 30% 0, 70% 0);
+    }	
+	48% {
+        clip-path: polygon(75% 15%, 30% 0, 70% 0);
+    }
+    60% {
+        clip-path: polygon(50% 0%, 30% 0, 70% 0);
+    }
+    72% {
+        clip-path: polygon(0% 15%, 30% 0, 70% 0);
+    }
+    84% {
+        clip-path: polygon(50% 15%, 30% 0, 70% 0);
+    }
+    100% {
+        clip-path: polygon(0% 15%, 30% 0, 70% 0);
+    }
+}
